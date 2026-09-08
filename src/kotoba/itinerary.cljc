@@ -51,7 +51,7 @@
   - **No mileage data.** `kotoba.fare` checks maximum-permitted-mileage
     against segment mileages the caller supplies; neither library ships
     a distance table."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ---------------------------------------------------------------------------
 ;; Calendar and clock arithmetic — proleptic Gregorian, exact integers
@@ -154,7 +154,7 @@
 ;; ---------------------------------------------------------------------------
 
 (defn- code? [s n]
-  (and (string? s) (= n (count s)) (= s (str/upper-case s))))
+  (and (string? s) (= n (count s)) (= s (str/upper s))))
 
 (defn leg
   "Construct one scheduled leg: `carrier` flight `number` from `origin` to
