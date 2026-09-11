@@ -134,8 +134,8 @@ is worse than one that refuses:
 ## Tests
 
 ```
-clojure -M:test    # 19 tests, 105 assertions
-clojure -M:lint
+kbb -M:test    # 19 tests, 105 assertions
+kbb -M:lint
 ```
 
 ## License
